@@ -377,6 +377,64 @@ main section[id] {
   box-shadow: 0 4px 10px rgba(42, 28, 30, 0.12);
 }
 
+.certifications {
+  margin-bottom: 56px;
+}
+
+.certifications__grid {
+  display: grid;
+  gap: 20px;
+}
+
+.cert-card {
+  background: rgba(246, 239, 233, 0.12);
+  border: 1px solid rgba(242, 184, 162, 0.2);
+  border-radius: 22px;
+  padding: 20px;
+  display: grid;
+  gap: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.cert-card__body {
+  display: grid;
+  gap: 6px;
+}
+
+.cert-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.cert-card__meta {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.cert-card__desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.cert-card__button {
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(246, 239, 233, 0.9);
+  color: var(--text-dark);
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cert-card__button:hover,
+.cert-card__button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(42, 28, 30, 0.2);
+}
+
 .works {
   margin-bottom: 60px;
 }
@@ -886,6 +944,10 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .certifications__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .contact__inner {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -941,6 +1003,10 @@ textarea:focus {
 @media (min-width: 980px) {
   .works__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .certifications__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .work-card {

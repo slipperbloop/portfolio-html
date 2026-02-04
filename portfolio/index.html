@@ -74,6 +74,57 @@
       </div>
     </section>
 
+    <section id="certifications" class="certifications" aria-labelledby="certifications-title">
+      <div class="section__inner">
+        <h2 id="certifications-title" class="section__title">Certifications</h2>
+        <p class="section__subtitle">
+          Professional courses completed to deepen my skills in design, development, and testing.
+        </p>
+        <div class="certifications__grid">
+          <article class="cert-card">
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Photoshop Essential Training</h3>
+              <p class="cert-card__meta">Platform: LinkedIn Learning</p>
+              <p class="cert-card__desc">Core photo editing and compositing techniques for design workflows.</p>
+            </div>
+            <a class="cert-card__button" href="assets/certificates/photoshopcert.pdf" target="_blank" rel="noreferrer">
+              View Certificate (PDF)
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Building Applications with React</h3>
+              <p class="cert-card__meta">Platform: LinkedIn Learning</p>
+              <p class="cert-card__desc">Hands-on React fundamentals for building responsive interfaces.</p>
+            </div>
+            <a class="cert-card__button" href="assets/certificates/buildingreactcert.pdf" target="_blank" rel="noreferrer">
+              View Certificate (PDF)
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Python Programming Fundamentals</h3>
+              <p class="cert-card__meta">Platform: LinkedIn Learning</p>
+              <p class="cert-card__desc">Python basics for scripting, automation, and problem solving.</p>
+            </div>
+            <a class="cert-card__button" href="assets/certificates/pythoncert.pdf" target="_blank" rel="noreferrer">
+              View Certificate (PDF)
+            </a>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card__body">
+              <h3 class="cert-card__title">Software Testing Foundations</h3>
+              <p class="cert-card__meta">Platform: LinkedIn Learning</p>
+              <p class="cert-card__desc">Testing principles and QA practices for reliable software.</p>
+            </div>
+            <a class="cert-card__button" href="assets/certificates/softwaretestingcert.pdf" target="_blank" rel="noreferrer">
+              View Certificate (PDF)
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="works" class="works" aria-labelledby="works-title">
       <div class="section__inner">
         <h2 id="works-title" class="section__title">My Works</h2>
@@ -307,15 +358,15 @@
             Available for freelance and internship opportunities. Typical response time: 1 to 2 business days.
           </p>
         </div>
-        <form class="contact__form" action="#" method="post">
+        <form class="contact__form" action="https://formspree.io/f/xrelnvzw" method="POST">
           <div class="form__row">
             <label class="form__field">
               <span>First Name *</span>
-              <input type="text" name="first_name" required />
+              <input type="text" name="name" required />
             </label>
             <label class="form__field">
               <span>Last Name *</span>
-              <input type="text" name="last_name" required />
+              <input type="text" name="name" required />
             </label>
           </div>
           <label class="form__field">
@@ -326,6 +377,7 @@
             <span>Message *</span>
             <textarea name="message" rows="5" required></textarea>
           </label>
+          <input type="hidden" name="_subject" value="New message from lohalyssa.com" />
           <button class="contact__button" type="submit">Send Message</button>
         </form>
       </div>
